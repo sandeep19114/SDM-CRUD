@@ -1,0 +1,13 @@
+.tab {
+    border-collapse: collapse;
+    width: 100%;
+}
+td {
+    border: 1px solid #FDD2B7;
+    text-align: left;
+    padding: 8px;
+}
+  
+  tr:nth-child(even) {
+    background-color: #FDD2B7;
+  }
