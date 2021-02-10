@@ -1,19 +1,38 @@
 const FRONTEND = "http://localhost:8080";
 const BACKEND = "http://localhost:9090";
-const APP_NAME = "sample";
+const APP_NAME = "SDM";
 const APP_PATH = `${FRONTEND}/apps/${APP_NAME}`;
+const API_PATH = `${BACKEND}/apps/${APP_NAME}`
+
 export const APP_CONSTANTS = {
- FRONTEND, BACKEND, APP_PATH, APP_NAME,
- MESSAGE_HTML: APP_PATH + "/message.html",
- RANDOM_HTML: APP_PATH + "/random.html",
+ FRONTEND, BACKEND, APP_PATH, APP_NAME, API_PATH,
+ HOME_HTML: APP_PATH + "/home.html",
+ INDEX_HTML: APP_PATH + "/index.html",
+ ATTENDENCE_HTML: APP_PATH + "/attendence.html",
+ NOTIF_HTML: APP_PATH + "/notif.html",
+ RESULT_HTML: APP_PATH + "/result.html",
  SESSION_NOTE_ID: "com_monkshu_ts",
+
+ ATT_DATA: `${BACKEND}/apis/getAtt`,
+ 
+
+
  USERID: "id",
  USER_ROLE: "user",
  GUEST_ROLE: "guest",
  PERMISSIONS_MAP: {
- user: [APP_PATH + "/message.html",
+ user: [APP_PATH + "/index.html",
+ APP_PATH + "/home.html",
+ APP_PATH + "/attendence.html",
+ APP_PATH + "/notif.html",
+ APP_PATH + "/result.html",
 $$.MONKSHU_CONSTANTS.ERROR_THTML],
- guest: [APP_PATH + "/random.html", APP_PATH + "/message.html",
+
+ guest: [APP_PATH + "/index.html",
+ APP_PATH + "/home.html",
+ APP_PATH + "/attendence.html",
+ APP_PATH + "/notif.html",
+ APP_PATH + "/result.html",
 $$.MONKSHU_CONSTANTS.ERROR_THTML]
  },
  API_KEYS: { "*": "uiTmv5YBOZMqdTb0gekD40PnoxtB9Q0k" },

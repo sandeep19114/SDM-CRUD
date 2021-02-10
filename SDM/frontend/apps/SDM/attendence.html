@@ -1,44 +1,23 @@
 <html>
     <head>
+        <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Attendence | Student DataManagement</title>
         <script src="https://kit.fontawesome.com/432ee519b1.js" crossorigin="anonymous"></script>
-        
-        <link rel="stylesheet" href="./css/main.css" />
-        <script type="text/javascript" src="./components/nav.js"></script>
+
+
+        <script type="module">
+            import { hd_nav } from "./components/hd-nav/hd-nav.mjs"; hd_nav.register();
+            import { att_form } from "./components/att-form/att-form.mjs"; att_form.register();
+            import { att_div } from "./components/att-div/att-div.mjs"; att_div.register();
+        </script>
+
     </head>
     <body>
         <hd-nav></hd-nav>
-
-        <center> <br/><br/>
-            <form name="aform" class="center" id="bef" onsubmit="return validate()">
-                Roll no : <input type="text" name="roll" id="roll" onblur="callBlur(1)" onfocus="callFocus(1)"/> <br/><br/>
-                Select Class : 
-                <select name="year" id="year" onblur="callBlur(2)" onfocus="callFocus(2)">
-                    <option hidden> Year</option>
-                    <option value="i"> I</option>
-                    <option value="ii"> II</option>
-                    <option value="iii"> III</option>
-                    <option value="iv"> IV</option>
-                </select> &nbsp; &nbsp;
-                <select name="sem" id="sem" onblur="callBlur(3)" onfocus="callFocus(3)">
-                    <option hidden> Sem</option>
-                    <option value="i"> I</option>
-                    <option value="ii"> II</option>
-                </select> <br/><br/>
-                <button name="asub">Get Attendence</button>
-                
-            </form>
-            <div id="aft" class="center">
-                Name : <label id="iname">name</label> <br/><br/>
-                Roll : <label id="iroll">roll</label> <br/><br/>
-                Year : <label id="iyear">year</label> <br/><br/>
-                No. of classes attended : <label id="iatt">0</label> <br/><br/>
-                Total no. of classes : <label id="itot">0</label> <br/><br/>
-                Percentage : <label id="iper">0</label>%
-
-            </div>
-        </center>
-        <script src="./js/attendence.js" ></script>
+        <att-form></att-form>
+        <att-div></att-div>
+        
+        
     </body>
 </html>

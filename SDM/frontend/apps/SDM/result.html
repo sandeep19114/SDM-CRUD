@@ -1,43 +1,19 @@
 <html>
     <head>
+        <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Results | Student DataManagement</title>
         <script src="https://kit.fontawesome.com/432ee519b1.js" crossorigin="anonymous"></script>
-        
-        <link rel="stylesheet" href="./css/main.css" />
-        <script type="text/javascript" src="./components/nav.js"></script>
+     
+        <script type="module">
+            import { hd_nav } from "./components/hd-nav/hd-nav.mjs"; hd_nav.register();
+            import { res_form } from "./components/res-form/res-form.mjs"; res_form.register();
+            import { res_div } from "./components/res-div/res-div.mjs"; res_div.register();
+        </script>
     </head>
     <body>
         <hd-nav></hd-nav>
-
-        <center> <br/><br/>
-            <form name="rform" class="center" id="bef" onsubmit="return validate()">
-                Roll no : <input type="text" name="roll" id="roll" onblur="callBlur(1)" onfocus="callFocus(1)"/> <br/><br/>
-                Select Class : 
-                <select name="year" id= "year" onblur="callBlur(2)" onfocus="callFocus(2)">
-                    <option hidden> Year</option>
-                    <option value="i"> I</option>
-                    <option value="ii"> II</option>
-                    <option value="iii"> III</option>
-                    <option value="iv"> IV</option>
-                </select> &nbsp; &nbsp;
-                <select name="sem" id="sem" onblur="callBlur(3)" onfocus="callFocus(3)">
-                    <option hidden> Sem</option>
-                    <option value="i"> I</option>
-                    <option value="ii"> II</option>
-                </select> <br/><br/>
-                DOB : <input type="date" name="dob" id="dob" onblur="callBlur(4)" onfocus="callFocus(4)"/> <br/><br/>
-                <button name="asub">Get Result</button>
-                
-            </form>
-            <div id="aft" class="center">
-                Name : <label id="iname">name</label> <br/><br/>
-                Roll : <label id="iroll">roll</label> <br/><br/>
-                Year : <label id="iyear">year</label> <br/><br/>
-                <img id="iimg" src="" alt="Result" width="100%" height="100%"/>
-
-            </div>
-        </center>
-        <script src="./js/result.js" ></script>
+        <res-form></res-form>
+        <res-div></res-div>
     </body>
 </html>

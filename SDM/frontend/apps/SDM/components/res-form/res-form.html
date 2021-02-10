@@ -1,0 +1,25 @@
+<link rel="stylesheet" href="./css/main.css">
+
+<div id="res-form">
+<center> <br/><br/>
+    <div class="center" id="bef">
+        Roll no : <input type="text" name="roll" id="roll" onblur="monkshu_env.components['res-form'].callBlur(1)" onfocus="monkshu_env.components['res-form'].callFocus(1)"/> <br/><br/>
+        Select Class : 
+        <select name="year" id= "year" onblur="monkshu_env.components['res-form'].callBlur(2)" onfocus="monkshu_env.components['res-form'].callFocus(2)">
+            <option hidden> Year</option>
+            <option value="I"> I</option>
+            <option value="II"> II</option>
+            <option value="III"> III</option>
+            <option value="IV"> IV</option>
+        </select> &nbsp; &nbsp;
+        <select name="sem" id="sem" onblur="monkshu_env.components['res-form'].callBlur(3)" onfocus="monkshu_env.components['res-form'].callFocus(3)">
+            <option hidden> Sem</option>
+            <option value="I"> I</option>
+            <option value="II"> II</option>
+        </select> <br/><br/>
+        DOB : <input type="date" name="dob" id="dob" onblur="monkshu_env.components['res-form'].callBlur(4)" onfocus="monkshu_env.components['res-form'].callFocus(4)"/> <br/><br/>
+        <button name="asub" onclick="monkshu_env.components['res-form'].validate()">Get Result</button>
+        
+    </div>
+</center>
+</div>

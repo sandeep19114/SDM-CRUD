@@ -11,3 +11,5 @@ exports.LIB_PATH = path.resolve(__dirname + "/../lib");
 // Simple API Response for success or failure
 exports.API_RESPONSE_TRUE = { result: true };
 exports.API_RESPONSE_FALSE = { result: false };
+
+exports.API_INSUFFICIENT_PARAMS = { result: false, message: "Insufficient Parameters" }

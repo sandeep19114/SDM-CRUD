@@ -1,2 +1,4 @@
 {
+    "/apis/getAtt": "/apis/getAtt.js?needsToken=false&addsToken=sub:access"
+    
 }

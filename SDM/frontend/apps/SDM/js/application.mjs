@@ -4,6 +4,7 @@ import {router} from "/framework/js/router.mjs";
 import {session} from "/framework/js/session.mjs";
 import {apimanager as apiman} from "/framework/js/apimanager.mjs";
 import {securityguard} from "/framework/js/securityguard.mjs";
+
 const init = async _ => {
  window.APP_CONSTANTS = (await import
 ("./constants.mjs")).APP_CONSTANTS;
@@ -20,7 +21,7 @@ APP_CONSTANTS.KEY_HEADER);
  let location = window.location.href;
  if (!router.isInHistory(location) ||
 !session.get(APP_CONSTANTS.USERID))
- router.loadPage(APP_CONSTANTS.MESSAGE_HTML);
+ router.loadPage(APP_CONSTANTS.HOME_HTML);
  else
  router.loadPage(location);
 }
