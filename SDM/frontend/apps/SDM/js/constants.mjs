@@ -11,9 +11,15 @@ export const APP_CONSTANTS = {
  ATTENDENCE_HTML: APP_PATH + "/attendence.html",
  NOTIF_HTML: APP_PATH + "/notif.html",
  RESULT_HTML: APP_PATH + "/result.html",
+ UPLOAD_HTML: APP_PATH + "/upload.html",
  SESSION_NOTE_ID: "com_monkshu_ts",
 
  ATT_DATA: `${BACKEND}/apis/getAtt`,
+ RES_DATA: `${BACKEND}/apis/getRes`,
+ NOTIF_DATA: `${BACKEND}/apis/getNotif`,
+ INS_ATT_DATA: `${BACKEND}/apis/insAtt`,
+ UPD_ATT_DATA: `${BACKEND}/apis/updAtt`,
+ DEL_ATT_DATA: `${BACKEND}/apis/delAtt`,
  
 
 
@@ -26,6 +32,7 @@ export const APP_CONSTANTS = {
  APP_PATH + "/attendence.html",
  APP_PATH + "/notif.html",
  APP_PATH + "/result.html",
+ APP_PATH + "/upload.html",
 $$.MONKSHU_CONSTANTS.ERROR_THTML],
 
  guest: [APP_PATH + "/index.html",
@@ -33,6 +40,7 @@ $$.MONKSHU_CONSTANTS.ERROR_THTML],
  APP_PATH + "/attendence.html",
  APP_PATH + "/notif.html",
  APP_PATH + "/result.html",
+ APP_PATH + "/upload.html",
 $$.MONKSHU_CONSTANTS.ERROR_THTML]
  },
  API_KEYS: { "*": "uiTmv5YBOZMqdTb0gekD40PnoxtB9Q0k" },

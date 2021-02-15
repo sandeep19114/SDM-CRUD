@@ -1,4 +1,9 @@
 {
-    "/apis/getAtt": "/apis/getAtt.js?needsToken=false&addsToken=sub:access"
+    "/apis/getAtt": "/apis/getAtt.js?needsToken=false&addsToken=sub:access",
+    "/apis/getRes": "/apis/getRes.js?needsToken=false&addsToken=sub:access",
+    "/apis/getNotif": "/apis/getNotif.js?needsToken=false&addsToken=sub:access",
+    "/apis/insAtt": "/apis/insAtt.js?needsToken=false&addsToken=sub:access",
+    "/apis/updAtt": "/apis/updAtt.js?needsToken=false&addsToken=sub:access",
+    "/apis/delAtt": "/apis/delAtt.js?needsToken=false&addsToken=sub:access"
     
 }
